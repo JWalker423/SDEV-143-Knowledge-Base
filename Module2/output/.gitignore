@@ -1,0 +1,10 @@
+build/
+bin
+temp*
+**/config
+**/config/local.py
+output/**/result.sh
+config.txt
+test.sh
+temp.txt
+
