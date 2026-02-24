@@ -1,0 +1,73 @@
+merge basics
+copy commits from one branch to another
+git is distributed no file locking system
+multiple people edit same file simultaneously
+merge only when work is final
+pull is fetch command plus merge command
+behind means remote repository has new commits
+fast forward merge
+occurs when branches stay on same timeline
+git moves head pointer to latest commit
+cleanest history log method
+use git log --oneline --graph to see branch tree
+merge conflicts
+same line of code changed in two different ways
+auto merge fails and requires manual choice
+terminal enters merging state
+git status lists unmerged files
+git merge --abort cancels merge and returns to previous state
+conflict markers
+<<<<<<< HEAD start of local changes
+======= divider between versions
+>>>>>>> end of incoming changes
+resolution steps
+open file and edit code manually
+delete all marker lines from file
+git add to stage fixed file
+git commit to finalize merge process
+keep default merge message unless company policy differs
+branch management
+git commit -m skips text editor for messages
+git branch -D deletes merged branches to clean log
+git diff branch1..branch2 reviews changes before merging
+always check location with git status before starting merge
+
+pushing after resolution
+pushing copies local commits to remote branch
+push works like pull but in reverse direction
+normal pushes use fast-forward and require no merge commit
+push develop using git push origin develop
+never change history of commits already pushed to remote
+pre-merge review
+review all changes before attempting merge to save time
+check location with git status or git branch
+checkout target branch before merging into it
+use git checkout master followed by git merge develop
+use git diff master..develop to see differences between branches
+pull requests on github also provide visual change reviews
+merging types
+merging is pouring one branch into another
+fast-forward occurs if parent branch has no new commits
+fast-forward moves pointer and appends commits to parent
+three-way merge occurs if parent branch has received commits
+three-way merge creates new merge commit with two parents
+conflicts occur if same line modified in both branches
+reducing conflicts
+avoid committing directly to master or develop branches
+use pull requests for all changes even when working alone
+keep pull requests focused on one specific issue or bug
+avoid do-it-all pull requests to prevent complex conflicts
+standardize line endings to unix-style across different systems
+agree on team formatting for indentation and whitespace
+merge management
+formatting differences often cause unnecessary conflicts
+use git merge --abort to cancel merge and fix formatting first
+aborting keeps current state and does not destroy commits
+visual git tools and IDE extensions help resolve conflicts easier
+text editors often break color schemes during merge markers
+summary
+merging moves commits between branches
+fast-forward and three-way are main merge types
+good workflows and pull requests minimize conflict frequency
+use specialized tools for better visibility of code changes
+
