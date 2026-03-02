@@ -15,3 +15,4 @@ To manage cognitive load and maintain organization, the repository is structured
 * **Version Control:** Tracking the evolution of course assignments using Git.
 * **Documentation:** Archiving reference materials and links for future development use.
 * **Evidence of Learning:** Providing a clear "Change Log" and history of all tasks undertaken during the semester.
+License: MIT.
